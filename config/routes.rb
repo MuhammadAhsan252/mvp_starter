@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   authenticated :admin do
     mount Avo::Engine, at: Avo.configuration.root_path
   end
-  
+
   root to: "home#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
